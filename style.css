@@ -1,67 +1,131 @@
-/*Navbar*/
 body{
-    margin: 0;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(205, 205, 205);
+  font-size: 2vh;
 }
+/*Navbar*/
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: black;    
-    position: sticky;
-    top: 0;
-    width: 100%;
-    display: flex;
-  } 
-  .navbar li a{
-    display: block;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(116, 5, 5),pink);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+} 
+.navbar a{
+  display: block;
+  font-size: 2.5vh;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+} 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 255);
+  color: black;
+} 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(220, 217, 217);
+  border-style: solid;
+  border-color: darkgrey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: rgb(138, 121, 121);
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*slut på navbar*/
+/*Början på grid av Main, sidebar och footer*/
+.area{
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(81, 97, 97);
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: grid; 
+  grid-template-columns: 20% auto 25%;
+  grid-template-areas: 
+    ". . ."
+    ". . .";
+  min-height: calc(100vh - 46px);
+}
+.sidebar {
+  border-style: solid;
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
+main {
+  border-style: solid;
+  grid-column: 2;
+  grid-row: 1 / 4;
+}
+footer{
+  border-style: solid;
+  grid-column: 1;
+  grid-row: 1/4;
+}
+/*Slut på grid*/
+/*Kod för index.html*/
+.index{
+  max-width: 84vw;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(126, 117, 117);
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-height: calc(100vh - 46px);
+  padding-top: 20px;
+}
+.img1{
+  height: 32vw;
+  width: 55vw;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: white;
+}
+.text{
+  max-width: 60vw;
+  margin: 0 auto;
+}
+/*Slut på index.html*/
+@media  screen and (max-width: 600px) {
+  body{
+    font-size: 2vh;
   }
-  .dropdown {
-    float: left;
-    overflow: hidden;
+  .navbar a{
+    font-size: 2vh;
   }
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  } 
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(53, 10, 53);
-  } 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content a:hover {
-    background-color: rgb(36, 17, 50);
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .size{
-    margin-left: 1em;
-    width: 40px;
-    height: 40px;
-  }
-  /*slut på navbar*/
+}
