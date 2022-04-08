@@ -116,16 +116,18 @@ footer{
   border-style: solid;
   border-color: white;
 }
+/*Slut på index.html*/
 .text{
   max-width: 60vw;
   margin: 0 auto;
+  padding-bottom: 1vh;
+  text-align: left;
 }
-/*Slut på index.html*/
 @media  screen and (max-width: 600px) {
   body{
     font-size: 2vh;
   }
   .navbar a{
-    font-size: 2vh;
+    font-size: 1.6vh;
   }
 }
