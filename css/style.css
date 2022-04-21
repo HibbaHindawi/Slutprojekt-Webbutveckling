@@ -67,61 +67,12 @@ body{
   display: block;
 }
 /*slut på navbar*/
-/*Början på grid av Main, sidebar och footer*/
-.area{
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgb(81, 97, 97);
-  color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  display: grid; 
-  grid-template-columns: 20% auto 25%;
-  grid-template-areas: 
-    ". . ."
-    ". . .";
-  min-height: calc(100vh - 46px);
-}
-.sidebar {
-  border-style: solid;
-  grid-column: 3;
-  grid-row: 1 / 4;
-}
-main {
-  border-style: solid;
-  grid-column: 2;
-  grid-row: 1 / 4;
-}
-footer{
-  border-style: solid;
-  grid-column: 1;
-  grid-row: 1/4;
-}
-/*Slut på grid*/
-/*Kod för index.html*/
-.index{
-  max-width: 84vw;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgb(126, 117, 117);
-  color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  min-height: calc(100vh - 46px);
-  padding-top: 20px;
-}
-.img1{
-  height: 32vw;
-  width: 55vw;
-  border-radius: 5%;
-  border-style: solid;
-  border-color: white;
-}
-/*Slut på index.html*/
 .text{
   max-width: 60vw;
   margin: 0 auto;
   padding-bottom: 1vh;
   text-align: left;
+  padding-top: 1vh;
 }
 @media  screen and (max-width: 600px) {
   body{
