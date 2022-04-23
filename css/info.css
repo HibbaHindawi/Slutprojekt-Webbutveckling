@@ -5,20 +5,15 @@
   background-color: rgb(126, 117, 117);
   color: white;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  display: grid; 
-  grid-template-columns: 20% auto 25%;
-  grid-template-areas: 
-    ". . ."
-    ". . .";
   min-height: calc(100vh - 46px);
 }
-.sidebar {
+.sidebar1 {
   border-style: solid;
   grid-column: 3;
   grid-row: 1 / 4;
   padding-top: 2vw;
 }
-.sidebar img{
+.sidebar1 img{
   height: 10vw;
   width: 9vw;
   padding: 1vw 2vw 1vw 2vw;
@@ -26,38 +21,92 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 10%;
 }
-.sidebar p{
+.sidebar1 p{
   padding:1vw 0vw 2vw 0vw;
   max-width: 15vw;
   margin: 0 auto;
   text-align: center;
 }
-main {
+.sidebar2{
+  border-style: solid;
+  grid-column: 2;
+}
+.main1 {
   border-style: solid;
   grid-column: 2;
   grid-row: 1 / 4;
 }
-footer{
+.main1 p{
+  max-width: 40vw;
+  margin: 0 auto;
+  padding: 1vw 0vw 0vw 0vw;
+}
+.main2{
+  border-style: solid;
+  grid-column: 1;
+}
+.footer1{
   border-style: solid;
   grid-column: 1;
   grid-row: 1/4;
-  font-size: large;
 }
-footer div{
+.footer1 div{
   border-color: white;
   border-style: solid;
   border-left: rgb(126, 117, 117);
   border-right: rgb(126, 117, 117);
   border-bottom: rgb(126, 117, 117);
-  padding: 1vw 0vw 2vw 0vw;
+  padding: 0vw 0vw 2vw 0vw;
+}
+.footer1 p{
+  padding: 0vw 0vw 1vw 0vw;
+  margin-bottom: 0;
+}
+.footer1 a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+.footer1 a:hover{
+  color: rgb(169, 169, 169);
 }
 .källor{
   min-height: calc(100vh);
 }
-.test{
-  color: white;
-  text-decoration: none;
+@media  screen and (max-width: 900px) {
+  .footer1 a{
+    font-size: 1.5vw;
+  }
 }
-.test:hover{
-  color: rgb(169, 169, 169);
+@media  screen and (max-width: 500px) {
+  .footer1 a{
+    font-size: 1.9vw;
+  }
+}
+.button{
+  display: grid; 
+  max-width: 60vw;
+  margin: 0 auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  ". .";
+  min-height: 6vw;
+  grid-gap: 1vw;
+  margin-top: 10vw;
+  padding: 0vw 3vw 0vw 3vw;
+}
+.button a{
+  background-color: black;
+  max-height: 3vw;
+  border-radius: 10%;
+  font-size: 1.43vw;
+  text-decoration: none;
+  color: white;
+  padding: 1vw 0vw 0vw 0vw;
+  background-color: rgb(155, 144, 144);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.button a:hover{
+  background-color: white;
+  color: black;
 }

@@ -7,37 +7,82 @@
     <title>Teknik</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
     <header><!--gjord av hibba-->
-        <ul class="navbar">
-            <li><a href="index.html">Teknik</a></li>
-            <li class="dropdown">
-                <a href="Programmering.html">Programmering</a>
-                <div class="dropdown-content">
-                    <a href="Språk.html">Programmering Språk</a>
-                    <a href="VarförT.html">Programmeringens Mening</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="Industriella.html">Industriell Teknik</a>
-                <div class="dropdown-content">
-                    <a href="Fabriker.html">Maskiner</a>
-                    <a href="FabrikerEx.html">Fabriker</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="GenerelT.html">Modern Teknik</a>
-                <div class="dropdown-content">
-                    <a href="mobiler.html">Mobiler, TV och Dator</a>
-                    <a href="jämförelse.html">Skillnader</a>
-                </div>
-            </li>
-        </ul>
+        <nav>  
+            <ul class="navbar">
+                <li><a href="index.html">Teknik</a></li>
+                <li class="dropdown">
+                    <a href="Programmering.html">Programmering</a>
+                    <div class="dropdown-content">
+                        <a href="Språk.html">Programmering Språk</a>
+                        <a href="VarförT.html">Programmeringens Mening</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Industriella.html">Industriell Teknik</a>
+                    <div class="dropdown-content">
+                        <a href="Fabriker.html">Maskiner</a>
+                        <a href="FabrikerEx.html">Fabriker</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="GenerelT.html">Modern Teknik</a>
+                    <div class="dropdown-content">
+                        <a href="mobiler.html">Mobiler, TV och Dator</a>
+                        <a href="jämförelse.html">Skillnader</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div class="area">
-    <main></main>
-    <footer></footer>
+        <div class="trespaltslayout">
+            <sidebar class="sidebar1">
+            </sidebar>
+            <main class="main1">
+                <h1>Program språk</h1>
+                <p>Programspråk är ett formellt språk som en människa använder för att skapa datorprogram. Datorers grundspråk kallas maskinkod och består av ettor och nollor, som datorns centralprocessor direkt kan tolka. Eftersom programmering på den nivån är svår och tidskrävande, och lätt leder till fel, har man tagit fram olika sorters programspråk, där man använder kodord för att beskriva vad datorn skall göra och som tillåter att text, siffror och räkneoperationer skrivs in ungefär som i kommunikation mellan människor. Ett skilt datorprogram används sedan för att översätta denna mer läsbara kod till maskinkod.</p>
+                <p>Datorprogrammets källkod, som skrivits för hand, måste alltså i de flesta fall översättas till maskinkod innan programmet skall köras. För assembler görs översättningen med en assemblator. För högnivåspråk använder man en kompilator. Maskinkoden lagras sedan i en exekverbar binärfil. Vissa programspråk är inte avsedda att kompileras: ett interpreterat språk, tolkas under själva exekveringen. Det finns även språk som kan kompileras allteftersom programmet körs, med hjälp av en JIT-kompilator, och språk som kompileras till en snabbtolkad bytekod.</p>
+                <p>En del programspråk är konstruerade för att ganska noga följa datorernas typiska sätt att arbeta. Nyttan är framförallt att programmeraren då har bättre kontroll över den maskinkod som kommer att skapas då programmet kompileras. Sådana språk kallas för maskin- eller hårdvarunära språk eller lågnivåspråk, med assembler som typexemplet. Motsatsen är högnivåspråk. Den mesta källkoden skrivs med högnivåspråk. Man brukar även skilja mellan funktionella språk och objektorienterade språk. Ytterligare en uppdelning är mellan imperativa språk och deklarativa språk.</p>
+                <div class="button">
+                    <a href="Programmering.html">Programmering</a>
+                    <a href="VarförT.html">Varför Används Programmering?</a>
+                </div>
+            </main>
+            <footer class="footer1">
+                <p>Lista av några av språken</p>
+                <ul>
+                    <li>J#</li>
+                    <li>Javascript</li>
+                    <li>Java</li>
+                    <li>Lua</li>
+                    <li>Algol</li>
+                    <li>Python</li>
+                    <li>Amiga E</li>
+                    <li>ARexx</li>
+                    <li>APL</li>
+                    <li>Befunge</li>
+                    <li>Blitz Basic</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Delphi</li>
+                    <li>Erlang</li>
+                    <li>F#</li>
+                </ul>
+            </footer>
+        </div>
+        <div class="tvåspaltslayout">
+            <main class="main2">
+                <p>test</p>
+            </main>
+            <sidebar class="sidebar2">
+                <p>test</p>
+            </sidebar>
+        </div>
     </div>
 </body>
 </html>

@@ -7,59 +7,72 @@
     <title>Teknik</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
     <header>
-        <ul class="navbar">
-            <li><a href="index.html">Teknik</a></li>
-            <li class="dropdown">
-                <a href="Programmering.html">Programmering</a>
-                <div class="dropdown-content">
-                    <a href="Språk.html">Programmering Språk</a>
-                    <a href="VarförT.html">Programmeringens Mening</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="Industriella.html">Industriell Teknik</a>
-                <div class="dropdown-content">
-                    <a href="Fabriker.html">Maskiner</a>
-                    <a href="FabrikerEx.html">Fabriker</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="GenerelT.html">Modern Teknik</a>
-                <div class="dropdown-content">
-                    <a href="mobiler.html">Mobiler, TV och Dator</a>
-                    <a href="jämförelse.html">Skillnader</a>
-                </div>
-            </li>
-        </ul>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Teknik</a></li>
+                <li class="dropdown">
+                    <a href="Programmering.html">Programmering</a>
+                    <div class="dropdown-content">
+                        <a href="Språk.html">Programmering Språk</a>
+                        <a href="VarförT.html">Programmeringens Mening</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Industriella.html">Industriell Teknik</a>
+                    <div class="dropdown-content">
+                        <a href="Fabriker.html">Maskiner</a>
+                        <a href="FabrikerEx.html">Fabriker</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="GenerelT.html">Modern Teknik</a>
+                    <div class="dropdown-content">
+                        <a href="mobiler.html">Mobiler, TV och Dator</a>
+                        <a href="jämförelse.html">Skillnader</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div class="area">
-        <sidebar class="sidebar">
-            <img src="bilder/programmering/csharp.png" alt="csharp">
-            <p>C# är ett objektorienterat programspråk utvecklat av Microsoft som en del av .NET-plattformen. Officiellt är språket baserat på C++ , men det liknar till stor del Java.</p>
-            <img src="bilder/programmering/800px-Python-logo-notext.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png">
-            <p>Python är ett programspråk som lanserades 1991 av Guido van Rossum. Det är vanligt som nybörjarspråk och inom undervisning, men också som generellt programspråk med tillämpning inom många olika domäner.</p>
-            <img src="bilder/programmering/Om-JavaScript-Definition-historik-anvandningar-och-styrkor.png" alt="https://androidstandard.com/swe/wp-content/uploads/2019/12/Om-JavaScript-Definition-historik-anvandningar-och-styrkor.png">
-            <p>Javascript är ett prototyp-baserat skriptspråk som är dynamiskt, svagt typat och hanterar funktioner som första-klass-objekt.<br> Javascript används främst på klientsidan i webbtillämpningar, det vill säga exekveras i en webbläsares Javascriptmotor.</p>
-        </sidebar>    
-        <main>
-            <p>test</p>
-        </main>
-        <footer>
-            <div>
-                <a class="test" href="Programmering.html">Programmering</a><br>
-                <a class="test" href="Språk.html">Programmeringens Språk</a><br>
-                <a class="test" href="Programmering.html">Programmering</a><br>
-                <a class="test" href="Programmering.html">Programmering</a><br>
-            </div>
-            <div class="källor">    
-                <a href="Programmering.html">Programmering</a><br>
-                <a href="Programmering.html">Programmering</a><br>
-                <a href="Programmering.html">Programmering</a>
-            </div>
-        </footer>
+        <div class="trespaltslayout">
+            <sidebar class="sidebar1">
+                <img src="bilder/programmering/csharp.png" alt="csharp">
+                <p>C# är ett objektorienterat programspråk utvecklat av Microsoft som en del av .NET-plattformen. Officiellt är språket baserat på C++ , men det liknar till stor del Java.</p>
+                <img src="bilder/programmering/800px-Python-logo-notext.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png">
+                <p>Python är ett programspråk som lanserades 1991 av Guido van Rossum. Det är vanligt som nybörjarspråk och inom undervisning, men också som generellt programspråk med tillämpning inom många olika domäner.</p>
+                <img src="bilder/programmering/Om-JavaScript-Definition-historik-anvandningar-och-styrkor.png" alt="https://androidstandard.com/swe/wp-content/uploads/2019/12/Om-JavaScript-Definition-historik-anvandningar-och-styrkor.png">
+                <p>Javascript är ett prototyp-baserat skriptspråk som är dynamiskt, svagt typat och hanterar funktioner som första-klass-objekt.<br> Javascript används främst på klientsidan i webbtillämpningar, det vill säga exekveras i en webbläsares Javascriptmotor.</p>
+            </sidebar>    
+            <main class="main1">
+                <h1>Programmering</h1>
+                <p>Programmering handlar om att instruera en maskin eller del av en maskin, till exempel en mikrodator, dator, robot eller NC-maskin att utföra ett visst arbete.<br>När man programmerar skriver man ett program och man använder ett programspråk. Olika delar av ett program kan vara skrivet i olika programspråk. Maskinen förstår normalt inte programspråket direkt. Detta måste översättas till den maskinkod som maskinen är konstruerad att direkt förstå. Programmering direkt i maskinkod förekommer praktiskt taget inte alls eftersom det är för arbetskrävande. Olika typer av maskiner har helt olika uppsättningar instruktioner i sin maskinkod.</p>
+                <p>Programmering kan ske på olika abstraktionsnivåer. Närmast hårdvaran, förutom maskinkod, ligger assemblerprogrammering där man använder ett assemblerspråk. Ett sådant språk har i det närmaste en direktöversättning till maskinkod, det vill säga de instruktioner man skriver motsvaras direkt av instruktioner i maskinkod, men använder en för människan mer läsbar form än maskinskodens ettor och nollor.</p>
+                <p>På nästa nivå kommer allmänna programspråk som till exempel C, Pascal och Java. I ett sådant språk motsvarar en sats eller instruktion normalt många instruktioner i maskinspråket. Ett sådant program översätts, kompileras, till maskinkod av en kompilator eller interpreteras av en tolk. Ofta skiljer man också här mellan maskinnära språk som C och högnivåspråk där en större del av funktionaliteten beskrivs abstrakt. Högnivåspråk kan också användas som term för språk med högre abstraktionsnivå än assembler.</p>
+                <p>Programmering kan också delas in efter vad programmet utför. Närmast hårdvaran kommer här styrning av hårdvarukomponenter genom mikroprogrammering. Nästa nivå är operativsystemet som fördelar och administrerar datorns resurser och gör datorn allmänt tillgänglig för människan genom ett användargränssnitt. Slutligen kommer nivån med alla olika användarprogram som ordbehandlare, webbläsare och datorspel. De första typerna av programmering görs av hårdvaruleverantörer, men operativsystem programmeras numera också av fristående programvaruleverantörer, som Microsoft, Apple Computer, Sun Microsystems, eller i distribuerade frivilligprojekt med öppen källkod.</p>
+                <div class="button">
+                    <a href="Språk.html">Programmeringens Språk</a>
+                    <a href="VarförT.html">Varför Används Programmering?</a>
+                </div>
+            </main>
+            <footer class="footer1">
+                <div>
+                    <p>Länkar</p>
+                    <a href="Språk.html">Programmeringens Språk</a> <br>
+                    <a href="VarförT.html">Varför Används Programmering?</a>
+                </div>
+                <div class="källor">
+                    <p>Källor</p>
+                    <a href="https://sv.wikipedia.org/wiki/Programmering">Wikipedia Programmering</a>
+                    <a href="https://sv.wikipedia.org/wiki/Programspråk">Wikipedia Programspråk</a>
+                    <a href="https://sv.wikipedia.org/wiki/Algoritm">Wikipedia Algoritm</a>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,14 @@
+.tvåspaltslayout{
+    display: grid; 
+    grid-template-columns: auto 50%;
+    grid-template-areas: 
+      ". ."
+      ". .";
+}
+.trespaltslayout{
+    display: grid; 
+    grid-template-columns: 20% auto 25%;
+    grid-template-areas: 
+        ". . ."
+        ". . .";
+}
