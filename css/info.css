@@ -25,6 +25,7 @@
   height: 12vw;
   width: 15vw;
   border-radius: 10%;
+  margin-top: 2vw;
 }
 .sidebar1 p{
   padding:1vw 0vw 2vw 0vw;
@@ -57,6 +58,7 @@
   border-style: solid;
   grid-column: 1;
   grid-row: 1/4;
+  padding-top: 2vw;
 }
 .footer1 div{
   border-color: white;
@@ -68,7 +70,7 @@
 }
 .footer1 p{
   padding: 0vw 0vw 1vw 0vw;
-  margin-bottom: 0;
+  margin: 0vw 1vw 0vw 1vw;
 }
 .footer1 a{
   color: white;
@@ -152,4 +154,67 @@ iframe{
   height: 22vw;
   width: 38vw;
   margin: 1vw 0vw 0vw 0vw;
+}
+table{
+  margin: 0 auto;
+  margin-top: 1vw;
+  font-size: 1vw;
+  background-color: rgb(89, 89, 89);
+}
+table th td{
+  border: 0.5vw solid black;
+  border-collapse: collapse;
+}
+th,td{
+  height: 3.4vw;
+}
+th{
+  background-color: rgba(101, 81, 81, 0.831);
+  color: rgb(255, 255, 255);
+}
+tr:nth-child(odd){
+  background-color: rgb(177, 175, 174);
+color: black;}
+tr:nth-child(even){
+  background-color: rgb(140, 120, 120);
+color: white;
+}
+th:nth-child(1){
+  width: 6vw;
+  text-align: left;
+  padding-left: 1vw;
+}
+th:nth-child(2){
+  width: 10vw;
+  text-align: center;
+}
+th:nth-child(3){
+  text-align: center;
+  width: 10vw;
+}
+th:nth-child(4){
+  text-align: right;
+  width: 6vw;
+  padding-right: 1vw;
+}
+td:nth-child(1){
+  width: 6vw;
+  text-align: left;
+  padding-left: 1vw;
+}
+td:nth-child(2){
+  text-align: center;
+  width: 10vw;
+}
+td:nth-child(3){
+  text-align: center;
+  width: 10vw;
+}
+td:nth-child(4){
+  text-align: right;
+  width: 6vw;
+  padding-right: 1vw;
+}
+.text1{
+  font-size: 1vw;
 }
