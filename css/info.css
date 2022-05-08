@@ -36,48 +36,45 @@
 .sidebar1 form{
   padding: 0vw 1vw 0vw 1vw;
 }
-.sidebar2{
-  border-style: solid;
-  grid-column: 2;
-}
-.main1 {
+
+main {
   border-style: solid;
   grid-column: 2;
   grid-row: 1 / 4;
+  min-height: calc(100vh - 46px);
 }
-.main1 p{
+main p{
   max-width: 40vw;
   margin: 0 auto;
   padding: 1vw 0vw 0vw 0vw;
 }
-.main2{
-  border-style: solid;
-  grid-column: 1;
-}
-.footer1{
+
+footer{
   border-style: solid;
   grid-column: 1;
   grid-row: 1/4;
   padding-top: 2vw;
 }
-.footer1 div{
-  border-color: white;
+.Links{
+  border-top: rgb(126, 117, 117);
+}
+footer div{
   border-style: solid;
   border-left: rgb(126, 117, 117);
   border-right: rgb(126, 117, 117);
   border-bottom: rgb(126, 117, 117);
   padding: 0vw 0vw 2vw 0vw;
 }
-.footer1 p{
+footer p{
   padding: 0vw 0vw 1vw 0vw;
   margin: 0vw 1vw 0vw 1vw;
 }
-.footer1 a{
+footer a{
   color: white;
   text-decoration: none;
   font-size: 1.3vw;
 }
-.footer1 a:hover{
+footer a:hover{
   color: rgb(169, 169, 169);
 }
 .källor{
@@ -85,12 +82,12 @@
   text-align: center;
 }
 @media  screen and (max-width: 900px) {
-  .footer1 a{
+  footer a{
     font-size: 1.5vw;
   }
 }
 @media  screen and (max-width: 500px) {
-  .footer1 a{
+  footer a{
     font-size: 1.9vw;
   }
 }
@@ -121,14 +118,14 @@
   background-color: white;
   color: black;
 }
-.footer1 ul{
+footer ul{
   padding: 0vw 0vw 0vw 1vw;
 }
-.footer1 li{
+footer li{
   text-align: left;
   padding: 0vw 1vw 0vw 1vw;
 }
-.footer1 h2{
+footer h2{
   padding:1vw 0vw 2vw 0vw;
   max-width: 13vw;
   margin: 0 auto;
