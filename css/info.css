@@ -1,16 +1,16 @@
 .area{
-  max-width: 84vw;
-  margin: 0 auto;
+  max-width: 84vw; /*Innehållet kan inte bli större än 84% av skärmens visningsbredd*/
+  margin: 0 auto; /*Lägger innehållet i mitten av sidan*/
   text-align: center;
   background-color: rgb(126, 117, 117);
   color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  min-height: calc(100vh - 46px);
+  box-shadow: 0vw 0.6vw 1.15vw 0vw rgba(0,0,0,0.2); /*Lägger en skugga runt innehållet*/
+  min-height: calc(100vh - 46px); /*Gör så att innehållet blir lika stor som 100vh-46px, det vill säga storleken av hela sidan i visningshöjden*/
 }
 .sidebar1 {
   border-style: solid;
-  grid-column: 3;
-  grid-row: 1 / 4;
+  grid-column: 3; /*Lägger innehållet i tredje kolumnen på sin grid*/
+  grid-row: 1 / 4; /*innehållet stretchar från rad 1 till 4*/
   padding-top: 2vw;
 }
 .img3{
@@ -18,8 +18,8 @@
   width: 9vw;
   padding: 1vw 2vw 1vw 2vw;
   background-color: rgb(245, 245, 241);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 10%;
+  box-shadow: 0vw 0.6vw 1.15vw 0vw rgba(0,0,0,0.2);
+  border-radius: 10%; /*gör hörnen runda*/
 }
 .img2{
   height: 12vw;
@@ -36,7 +36,6 @@
 .sidebar1 form{
   padding: 0vw 1vw 0vw 1vw;
 }
-
 main {
   border-style: solid;
   grid-column: 2;
@@ -48,7 +47,6 @@ main p{
   margin: 0 auto;
   padding: 1vw 0vw 0vw 0vw;
 }
-
 footer{
   border-style: solid;
   grid-column: 1;
@@ -56,7 +54,7 @@ footer{
   padding-top: 2vw;
 }
 .Links{
-  border-top: rgb(126, 117, 117);
+  border-top: rgb(126, 117, 117); /*Ändrar färgen på ovansidan av bordern*/
 }
 footer div{
   border-style: solid;
@@ -81,25 +79,25 @@ footer a:hover{
   min-height: calc(100vh);
   text-align: center;
 }
-@media  screen and (max-width: 900px) {
+@media  screen and (max-width: 900px) { /*Ändrar stylen på det som står inuti när skärmen blir 900px eller mindre i bredden*/
   footer a{
     font-size: 1.5vw;
   }
 }
-@media  screen and (max-width: 500px) {
+@media  screen and (max-width: 500px) {/*Ändrar stylen på det som står inuti när skärmen blir 500px eller mindre i bredden*/
   footer a{
     font-size: 1.9vw;
   }
 }
 .button{
-  display: grid; 
+  display: grid; /*Skapar en grid*/
   max-width: 60vw;
   margin: 0 auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto; /*Gör kolumnerna 50% stor var*/
   grid-template-areas: 
-  ". .";
+  ". ."; /*Säger hur gridden ska se ut*/
   min-height: 7vw;
-  grid-gap: 1vw;
+  grid-gap: 1vw; /*Lägger uttrymme mellan grid elementen*/
   margin-top: 6vw;
   padding: 0vw 3vw 0vw 3vw;
 }
@@ -112,7 +110,7 @@ footer a:hover{
   color: white;
   padding: 1vw 0vw 1vw 0vw;
   background-color: rgb(155, 144, 144);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0vw 0.6vw 1.15vw 0vw rgba(0,0,0,0.2);
 }
 .button a:hover{
   background-color: white;
@@ -169,14 +167,14 @@ th{
   background-color: rgba(101, 81, 81, 0.831);
   color: rgb(255, 255, 255);
 }
-tr:nth-child(odd){
+tr:nth-child(odd){ /*Gör så att varje udda tr ändrar style till det som står*/
   background-color: rgb(177, 175, 174);
 color: black;}
-tr:nth-child(even){
+tr:nth-child(even){ /*Varje jämna tr ändrar style till det som står*/
   background-color: rgb(140, 120, 120);
 color: white;
 }
-th:nth-child(1){
+th:nth-child(1){/*Den 1:a th har stylen som står under*/
   width: 6vw;
   text-align: left;
   padding-left: 1vw;
@@ -214,4 +212,45 @@ td:nth-child(4){
 }
 .text1{
   font-size: 1vw;
+}
+.button1{
+  max-width: 60vw;
+  margin: 0 auto;
+  min-height: 6vw;
+  margin-top: 2vw;
+  padding: 0vw 3vw 0vw 3vw;
+}
+.button1 a{
+  background-color: black;
+  max-height: 3vw;
+  border-radius: 10%;
+  font-size: 1.43vw;
+  text-decoration: none;
+  color: white;
+  padding: 1vw 1vw 1vw 1vw;
+  background-color: rgb(155, 144, 144);
+  box-shadow: 0vw 0.6vw 1.15vw 0vw rgba(0,0,0,0.2);
+}
+.button1 a:hover{
+  background-color: white;
+  color: black;
+}
+.main2 {
+  border-style: solid;
+  grid-column: 1;
+  grid-row: 1 / 4;
+  min-height: calc(100vh - 46px);
+}
+.footer2{
+  border-style: solid;
+  grid-column: 2;
+  grid-row: 1/4;
+  padding-top: 2vw;
+}
+.footer2 ul{
+  padding: 0vw 0vw 0vw 8vw;
+}
+.footer2 li{
+  text-align: left;
+  padding: 0vw 1vw 0vw 1vw;
 }
