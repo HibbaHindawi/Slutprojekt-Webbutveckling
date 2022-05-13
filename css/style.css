@@ -84,6 +84,21 @@ header{
   text-align: left;
   padding-top: 0.55vw;
 }
+/*Grids*/
+.tvåspaltslayout{
+  display: grid; 
+  grid-template-columns: auto 30%;
+  grid-template-areas: 
+    ". ."
+    ". .";
+}
+.trespaltslayout{
+  display: grid; 
+  grid-template-columns: 20% auto 25%;
+  grid-template-areas: 
+      ". . ."
+      ". . .";
+}
 @media  screen and (max-width: 900px) {
   body{
     font-size: 2vw;
@@ -99,19 +114,4 @@ header{
   .navbar a{
     font-size: 0.9vw;
   }
-}
-/*Grids*/
-.tvåspaltslayout{
-  display: grid; 
-  grid-template-columns: auto 30%;
-  grid-template-areas: 
-    ". ."
-    ". .";
-}
-.trespaltslayout{
-  display: grid; 
-  grid-template-columns: 20% auto 25%;
-  grid-template-areas: 
-      ". . ."
-      ". . .";
 }

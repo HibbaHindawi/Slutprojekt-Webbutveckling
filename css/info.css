@@ -79,16 +79,6 @@ footer a:hover{
   min-height: calc(100vh);
   text-align: center;
 }
-@media  screen and (max-width: 900px) { /*Ändrar stylen på det som står inuti när skärmen blir 900px eller mindre i bredden*/
-  footer a{
-    font-size: 1.5vw;
-  }
-}
-@media  screen and (max-width: 500px) {/*Ändrar stylen på det som står inuti när skärmen blir 500px eller mindre i bredden*/
-  footer a{
-    font-size: 1.9vw;
-  }
-}
 .button{
   display: grid; /*Skapar en grid*/
   max-width: 60vw;
@@ -253,4 +243,14 @@ td:nth-child(4){
 .footer2 li{
   text-align: left;
   padding: 0vw 1vw 0vw 1vw;
+}
+@media  screen and (max-width: 900px) { /*Ändrar stylen på det som står inuti när skärmen blir 900px eller mindre i bredden*/
+  footer a{
+    font-size: 1.5vw;
+  }
+}
+@media  screen and (max-width: 500px) {/*Ändrar stylen på det som står inuti när skärmen blir 500px eller mindre i bredden*/
+  footer a{
+    font-size: 1.9vw;
+  }
 }
