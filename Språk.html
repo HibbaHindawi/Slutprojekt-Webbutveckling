@@ -37,10 +37,31 @@
             </ul>
         </nav>
     </header>
-    <div class="area">
+    <div id="area">
         <div class="trespaltslayout">
             <div class="sidebar1">
                 <form action="Språk.html" method="get">
+                    <fieldset>
+                        <legend>Exempel på vad som kan finnas på en webbsida</legend>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required>
+                        <label for="pwd">Password:</label><br>
+                        <input type="password" id="pwd" name="pwd" required>
+                        <input type="submit"><br>
+                        <label for="Fn">First Name</label><br>
+                        <input type="text" id="Fn" name="Fn"><br>
+                        <label for="Ln">Last name:</label><br>
+                        <input type="text" id="Ln" name="Ln">
+                        <fieldset>
+                            <legend>Favorite language</legend>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">HTML</label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">CSS</label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">JavaScript</label>
+                        </fieldset>
+                    </fieldset>
                     <fieldset>
                         <legend>Vilka språk vet du?</legend>
                         <input type="checkbox" id="lan1" name="lan1" value="C#">
@@ -63,7 +84,7 @@
             </div>
             <main>
                 <h1>Program språk</h1>
-                <img class="img1" src="Bilder/programmering/programspråk.jpeg" alt="https://www.superprof.se/blog/wp-content/uploads/2021/06/florian-olivo-4hbj-eymz1o-unsplash.jpg">
+                <img class="img1" src="Bilder/programmering/programspråk.jpeg" alt="programspråk">
                 <p>Programspråk är ett formellt språk som en människa använder för att skapa datorprogram. Datorers grundspråk kallas maskinkod och består av ettor och nollor, som datorns centralprocessor direkt kan tolka. Eftersom programmering på den nivån är svår och tidskrävande, och lätt leder till fel, har man tagit fram olika sorters programspråk, där man använder kodord för att beskriva vad datorn skall göra och som tillåter att text, siffror och räkneoperationer skrivs in ungefär som i kommunikation mellan människor. Ett skilt datorprogram används sedan för att översätta denna mer läsbara kod till maskinkod.</p>
                 <p>Datorprogrammets källkod, som skrivits för hand, måste alltså i de flesta fall översättas till maskinkod innan programmet skall köras. För assembler görs översättningen med en assemblator. För högnivåspråk använder man en kompilator. Maskinkoden lagras sedan i en exekverbar binärfil. Vissa programspråk är inte avsedda att kompileras: ett interpreterat språk, tolkas under själva exekveringen. Det finns även språk som kan kompileras allteftersom programmet körs, med hjälp av en JIT-kompilator, och språk som kompileras till en snabbtolkad bytekod.</p>
                 <p>En del programspråk är konstruerade för att ganska noga följa datorernas typiska sätt att arbeta. Nyttan är framförallt att programmeraren då har bättre kontroll över den maskinkod som kommer att skapas då programmet kompileras. Sådana språk kallas för maskin- eller hårdvarunära språk eller lågnivåspråk, med assembler som typexemplet. Motsatsen är högnivåspråk. Den mesta källkoden skrivs med högnivåspråk. Man brukar även skilja mellan funktionella språk och objektorienterade språk. Ytterligare en uppdelning är mellan imperativa språk och deklarativa språk.</p>

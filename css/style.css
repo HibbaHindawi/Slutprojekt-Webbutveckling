@@ -25,13 +25,28 @@ header{
   display: flex;
   overflow: hidden;
 } 
-.navbar a{
+.navbar a:link{
   display: block;
   font-size: 1.4vw;
   color: white;
   text-align: center;
   padding: 1vw 1.15vw;
   text-decoration: none;
+}
+.navbar a:visited{
+  display: block;
+  font-size: 1.4vw;
+  color: white;
+  text-align: center;
+  padding: 1vw 1.15vw;
+  text-decoration: none;
+}
+.navbar a:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.navbar a:active{
+  color: #808080;
 }
 .dropdown {
   float: left;
@@ -47,7 +62,7 @@ header{
   font-family: inherit;
   margin: 0;
 } 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: rgb(255, 255, 255);
   color: black;
 } 
@@ -98,6 +113,10 @@ header{
   grid-template-areas: 
       ". . ."
       ". . .";
+}
+video{
+  width:35vw;
+  height:30vw;
 }
 @media  screen and (max-width: 900px) {
   body{

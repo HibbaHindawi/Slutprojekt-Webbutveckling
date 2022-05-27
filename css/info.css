@@ -1,9 +1,9 @@
-.area{
+#area{
   max-width: 84vw; /*Innehållet kan inte bli större än 84% av skärmens visningsbredd*/
   margin: 0 auto; /*Lägger innehållet i mitten av sidan*/
   text-align: center;
-  background-color: rgb(126, 117, 117);
-  color: white;
+  background-color: #75757E;
+  color: white; 
   box-shadow: 0vw 0.6vw 1.15vw 0vw rgba(0,0,0,0.2); /*Lägger en skugga runt innehållet*/
   min-height: calc(100vh - 46px); /*Gör så att innehållet blir lika stor som 100vh-46px, det vill säga storleken av hela sidan i visningshöjden*/
 }
@@ -75,9 +75,13 @@ footer a{
 footer a:hover{
   color: rgb(169, 169, 169);
 }
-.källor{
+.Källor{
   min-height: calc(100vh);
   text-align: center;
+}
+footer ul{
+  margin: 0vw 1vw 0vw 1vw;
+  list-style-type: none;
 }
 .button{
   display: grid; /*Skapar en grid*/
@@ -243,6 +247,9 @@ td:nth-child(4){
 .footer2 li{
   text-align: left;
   padding: 0vw 1vw 0vw 1vw;
+}
+ol{
+  margin: 0vw 1vw 0vw 1vw;
 }
 @media  screen and (max-width: 900px) { /*Ändrar stylen på det som står inuti när skärmen blir 900px eller mindre i bredden*/
   footer a{
