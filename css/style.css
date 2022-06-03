@@ -73,7 +73,7 @@ header{
   border-style: solid;
   border-color: darkgrey;
   min-width: 11.5vw;
-  box-shadow: 0vw 0.6vw 1.15vw 0vw rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
